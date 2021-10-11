@@ -27,9 +27,16 @@ int main()
         }else if(target < arr[mid]){
             last_index = mid - 1;
         }else{
+            target == arr[mid];
             first_index = last_index + 1;
         }
     }
-    
+    int x = mid;
+    if(target == arr[mid]){
+        cout << " Element found " << endl;
+    }
+    else{
+        cout << "Not found" << endl;
+    }
     return 0;
 }
